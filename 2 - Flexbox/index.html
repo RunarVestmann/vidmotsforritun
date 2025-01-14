@@ -1,0 +1,28 @@
+<style>
+  #container {
+    display: flex;
+    gap: 32px;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 700px) {
+    #container {
+      flex-flow: column nowrap;
+      align-items: center;
+    }
+  }
+
+  .item {
+    width: 160px;
+    height: 160px;
+    background-color: blue;
+    border: 8px solid orange;
+  }
+</style>
+
+<div id="container">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</div>
